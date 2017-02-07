@@ -2,6 +2,7 @@ require 'rest-client'
 RestClient.get('http://swapi.co/api/people/1')
 
 def welcome
+  "Welcome to Your StarWars API!"
   # puts out a welcome message here!
 end
 
