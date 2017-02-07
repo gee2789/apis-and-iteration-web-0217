@@ -36,10 +36,10 @@ end
 
 def parse_character_movies(films_hash)
     movies=""
+    i=0
     films_hash.each do |hash|
-      movies += hash["title"]
-      movies += " " + hash["release_date"]
-      movies+="\n"
+      i+=1
+      movies += i.to_s + " " + hash["title"] +"\n"
     end
     puts movies
   # some iteration magic and puts out the movies in a nice list
